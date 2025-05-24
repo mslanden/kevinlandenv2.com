@@ -1,0 +1,23 @@
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y proximity;
+  scroll-padding-top: 80px; /* Adjust based on your header height */
+}
+
+/* Optional: Add momentum scrolling on iOS */
+body {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Optional: Add smooth scroll for browsers that don't support scroll-behavior */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Make sections act as scroll snap points */
+section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
