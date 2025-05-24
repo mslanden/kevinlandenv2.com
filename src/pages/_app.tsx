@@ -6,6 +6,9 @@ import { ThemeProvider } from '../styles/ThemeProvider';
 import { GlobalStyle } from '../styles/GlobalStyle';
 import '../styles/globals.css';
 import '../styles/fonts.css';
+// Bootstrap CSS and Icons
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();

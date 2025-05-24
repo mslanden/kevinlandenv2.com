@@ -239,7 +239,7 @@ const Contact = () => {
           
           <ContactInfoList>
             <ContactInfoItem>
-              <ContactIcon>ud83dudccd</ContactIcon>
+              <ContactIcon><i className="bi bi-geo-alt"></i></ContactIcon>
               <ContactText>
                 <ContactLabel>Address:</ContactLabel>
                 <ContactValue>123 Country Road, Jackson, WY 83001</ContactValue>
@@ -247,7 +247,7 @@ const Contact = () => {
             </ContactInfoItem>
             
             <ContactInfoItem>
-              <ContactIcon>ud83dudcf1</ContactIcon>
+              <ContactIcon><i className="bi bi-telephone"></i></ContactIcon>
               <ContactText>
                 <ContactLabel>Phone:</ContactLabel>
                 <ContactValue>(307) 555-1234</ContactValue>
@@ -255,7 +255,7 @@ const Contact = () => {
             </ContactInfoItem>
             
             <ContactInfoItem>
-              <ContactIcon>ud83dudce7</ContactIcon>
+              <ContactIcon><i className="bi bi-envelope"></i></ContactIcon>
               <ContactText>
                 <ContactLabel>Email:</ContactLabel>
                 <ContactValue>info@kevinlanden.com</ContactValue>
@@ -263,7 +263,7 @@ const Contact = () => {
             </ContactInfoItem>
             
             <ContactInfoItem>
-              <ContactIcon>ud83dudcc5</ContactIcon>
+              <ContactIcon><i className="bi bi-calendar"></i></ContactIcon>
               <ContactText>
                 <ContactLabel>Hours:</ContactLabel>
                 <ContactValue>Monday - Friday: 9am - 5pm</ContactValue>
@@ -273,10 +273,10 @@ const Contact = () => {
           </ContactInfoList>
           
           <SocialLinks>
-            <SocialLink href="#" aria-label="Facebook">u{1F4E1}</SocialLink>
-            <SocialLink href="#" aria-label="Instagram">u{1F4F8}</SocialLink>
-            <SocialLink href="#" aria-label="LinkedIn">u{1F4BC}</SocialLink>
-            <SocialLink href="#" aria-label="Twitter">u{1F4AC}</SocialLink>
+            <SocialLink href="#" aria-label="Facebook"><i className="bi bi-facebook"></i></SocialLink>
+            <SocialLink href="#" aria-label="Instagram"><i className="bi bi-instagram"></i></SocialLink>
+            <SocialLink href="#" aria-label="LinkedIn"><i className="bi bi-linkedin"></i></SocialLink>
+            <SocialLink href="#" aria-label="Twitter"><i className="bi bi-twitter"></i></SocialLink>
           </SocialLinks>
         </ContactInfo>
         
