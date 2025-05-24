@@ -161,6 +161,7 @@ export interface ThemeColors extends ColorPalette {
   active: string;
   disabled: string;
   light: string;
+  dark: string;
 }
 
 // Theme type
@@ -188,6 +189,7 @@ export const lightTheme: Theme = {
     active: colors.gray[200],
     disabled: colors.gray[300],
     light: colors.white,
+    dark: colors.gray[900],
   },
 };
 
@@ -201,6 +203,7 @@ export const darkTheme: Theme = {
     primary: colors.secondary,
     secondary: colors.primary,
     light: colors.white,
+    dark: colors.gray[900],
     // Backgrounds
     background: colors.gray[900],
     surface: colors.gray[800],
