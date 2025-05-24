@@ -160,6 +160,7 @@ export interface ThemeColors extends ColorPalette {
   hover: string;
   active: string;
   disabled: string;
+  light: string;
 }
 
 // Theme type
@@ -186,6 +187,7 @@ export const lightTheme: Theme = {
     hover: colors.gray[100],
     active: colors.gray[200],
     disabled: colors.gray[300],
+    light: colors.white,
   },
 };
 
@@ -198,6 +200,7 @@ export const darkTheme: Theme = {
     // In dark mode, we swap primary and secondary
     primary: colors.secondary,
     secondary: colors.primary,
+    light: colors.white,
     // Backgrounds
     background: colors.gray[900],
     surface: colors.gray[800],
