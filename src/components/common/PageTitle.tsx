@@ -22,11 +22,11 @@ const Title = styled.h1`
   }
 `;
 
-const Subtitle = styled.p`
+const Subtitle = styled.p<{ centered?: boolean }>`
   font-size: 1.1rem;
   color: ${props => props.theme.colors.text};
   max-width: 700px;
-  margin: ${props => props.theme.text === 'center' ? '0 auto' : '0'};
+  margin: ${props => props.centered ? '0 auto' : '0'};
   line-height: 1.6;
   
   @media (min-width: ${props => props.theme.breakpoints.tablet}) {
@@ -43,7 +43,7 @@ const PageTitle: React.FC<PageTitleProps> = ({
   return (
     <TitleContainer centered={centered} className={className}>
       <Title>{title}</Title>
-      {subtitle && <Subtitle>{subtitle}</Subtitle>}
+      {subtitle && <Subtitle centered={centered}>{subtitle}</Subtitle>}
     </TitleContainer>
   );
 };
